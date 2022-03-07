@@ -2,7 +2,7 @@ pipeline {
 
     environment { 
 
-        registry = "manjunathin/mbr-nginix" 
+        registry = "manjunathin/mbr-nginxalpine" 
 
         registryCredential = 'mydocker' 
 
@@ -83,17 +83,7 @@ pipeline {
 
             }
         }
-       /* stage('Cleaning up-Final') { 
 
-            steps { 
-
-                 
-                sh '''docker rmi $registry:$BUILD_NUMBER -f
-                      '''
-
-            }
-
-        }*/
 
     }
 
